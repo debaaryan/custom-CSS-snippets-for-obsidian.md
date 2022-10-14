@@ -1,0 +1,551 @@
+/*----------------------------------------------------------------
+Fonts and Colors
+----------------------------------------------------------------*/
+:root {
+  --font-reg: Kalam, MV Boli, Handlee, Catamaran, Helvetica Neue, Helvetica,
+    Arial, sans-serif;
+  --default-font: Kalam, MV Boli, Handlee, Catamaran, Helvetica Neue, Helvetica,
+    Arial, sans-serif;
+  --font-editor: MV Boli, Segoe Print, Indie Flower, Comic Sans MS, Chilanka,
+    Kalam, Catamaran, Helvetica Neue, Helvetica, Arial, sans-serif;
+  --discord-yellow-alt: rgb(223, 88, 135);
+  --font-var-space-header: Kalam, fugaz one, forte, cooper black;
+  --font-family-major: Kalam, MV Boli, Handlee, Catamaran, Helvetica Neue,
+    Helvetica, Arial, sans-serif;
+  --font-family-strong: Kalam, MV Boli, Handlee, Catamaran, Helvetica Neue,
+    Helvetica, Arial, sans-serif;
+  --font-space-header: Kalam;
+  --list-edit-offset: 0em;
+  --list-indent: 4em;
+  font-size: 1.1rem;
+}
+
+.theme-dark {
+  --text-muted: #ddd;
+}
+
+body {
+  --header-height: 35px;
+}
+
+/*----------------------------------------------------------------
+Reading mode Layout  , Max Player Height for Embeds : 70vh, Min Player Width for Embeds : 500px
+----------------------------------------------------------------*/
+
+.markdown-source-view.mod-cm6.is-folding .cm-contentContainer {
+  padding-left: 0px !important;
+}
+
+.markdown-preview-view,
+.popover,
+.workspace-leaf-content[data-type="markdown"] {
+  font-family: consolas, MV Boli, Kalam;
+}
+
+.markdown-source-view.mod-cm6 .cm-scroller {
+  font-family: consolas, MV Boli, Kalam;
+  padding: 10px 0px !important;
+}
+
+body,
+.app-container {
+  font-family: consolas, Kalam, MV Boli;
+}
+
+.cm-s-obsidian span.obsidian-search-match-highlight {
+  color: red;
+  background-color: #fff;
+  mix-blend-mode: screen;
+}
+
+.workspace-tab-header.is-active {
+  background-color: #303030;
+}
+
+.is-focused
+  .mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-icon,
+.is-focused
+  .mod-active
+  .workspace-tab-header.is-active
+  .workspace-tab-header-inner-title {
+  color: #ddd;
+}
+
+body.is-focused .workspace-tab-header .workspace-tab-header-inner-title {
+  color: #909090;
+}
+
+div.view-header-title-container.mod-at-start {
+  display: none;
+}
+
+div.view-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*-------------------------------------------------- 
+font-size 
+----------------------------------------------------*/
+
+span.cm-list-1 {
+  font-size: 18px;
+}
+
+span.cm-list-2 {
+  font-size: 18px;
+}
+
+span.cm-list-3 {
+  font-size: 18px;
+}
+
+span.cm-inline-code {
+  font-size: 18px !important;
+}
+
+span.cm-hmd-codeblock {
+  font-size: 1rem;
+}
+
+th,
+td,
+code {
+  font-size: 18px !important;
+}
+
+.theme-dark {
+  --text-normal: #7da6dd !important;
+  --text-em: rgb(50, 220, 134);
+  --text-a: rgb(236, 219, 243);
+  --text-a-hover: rgb(218, 140, 255);
+  --text-link: rgb(204, 163, 240);
+
+  --interactive-accent: rgb(255, 78, 171);
+  --accent-em: rgb(50, 220, 134);
+
+  --text-title-h1: rgb(200, 194, 2);
+  --text-title-h2: rgb(0, 175, 245);
+  --text-title-h3: rgb(185, 130, 232);
+  --text-title-h4: rgb(243, 129, 31);
+  --text-title-h5: rgb(143, 214, 61);
+  --text-title-h6: rgb(246, 132, 172);
+  --background-modifier-border: #3e679a;
+}
+
+.cm-s-obsidian span.cm-link,
+.cm-s-obsidian span.cm-hmd-internal-link {
+  color: #c1c8d1 !important;
+}
+
+.theme-dark .cm-hmd-internal-link,
+.theme-dark .modal-content a,
+.theme-dark .markdown-preview-view a.footnote-link,
+.theme-dark .markdown-preview-view a.internal-link,
+.theme-dark .markdown-preview-view a.external-link {
+  color: #cca305 !important;
+}
+
+/*----------------------------------------------------------------
+File Explorer Layout
+----------------------------------------------------------------*/
+
+.nav-folder-children {
+  padding-left: 10px;
+}
+
+.nav-file-title,
+.nav-folder-title,
+.nav-file-title-content {
+  white-space: nowrap !important;
+}
+
+/*---------------------------
+Links 
+-----------------------------*/
+
+a {
+  color: #edc802;
+}
+
+/* ----------------------------------------------------------------
+Callout box
+----------------------------------------------------------------*/
+
+.callout {
+  --callout-color: 0, 179, 255 !important;
+}
+
+.callout-title {
+  background-color: rgba(0, 179, 255, 0.2);
+}
+
+/* ----------------------------------------------------------------
+Blockquote item and background colors
+----------------------------------------------------------------*/
+
+.span.cm-list-1 {
+  color: #7cc4d1;
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote {
+  border-left: 4px solid #831818;
+  border-right: 4px solid #831818;
+  background-color: #17142f;
+}
+
+span.cm-em.cm-quote.cm-quote-1 {
+  color: #0ee397;
+}
+
+/*----------------------------------------------------------------
+Heading and bold, italics and quote color, highlights, list
+----------------------------------------------------------------*/
+.theme-dark .cm-s-obsidian .cm-header-1,
+.theme-dark .markdown-preview-view h1 {
+  color: #d6be00 !important;
+  font-weight: 500 !important;
+  font-family: Lilita One, monotype corsiva;
+  font-size: 2.3rem !important;
+}
+
+.theme-dark .cm-s-obsidian .cm-header-2,
+.theme-dark .markdown-preview-view h2 {
+  color: #ffa500 !important;
+  font-weight: 600 !important;
+  font-family: dosis, monotype corsiva;
+  font-size: 1.7rem !important;
+}
+
+.theme-dark .cm-s-obsidian .cm-header-3,
+.theme-dark .markdown-preview-view h3 {
+  color: #6ed4ff !important;
+  font-family: dosis, monotype corsiva;
+  font-size: 1.3rem !important;
+}
+
+.theme-dark .cm-s-obsidian .cm-header-4,
+.theme-dark .markdown-preview-view h4 {
+  color: magenta !important;
+  font-family: dosis, monotype corsiva;
+  font-size: 1.2rem !important;
+}
+
+.theme-dark .cm-s-obsidian .cm-header-6,
+.theme-dark .markdown-preview-view h6 {
+  color: orange;
+  font-size: 1.2rem !important;
+}
+
+.theme-dark .cm-em,
+.theme-dark em {
+  color: #0ee397;
+}
+
+.theme-dark .cm-s-obsidian .cm-strong,
+.theme-dark strong {
+  color: #c35a00;
+  font-weight: 400;
+}
+
+.theme-dark .cm-s-obsidian span.cm-inline-code,
+.theme-dark .markdown-preview-view p code {
+  color: #dac36a;
+  font-weight: 600 !important;
+}
+
+.markdown-preview-view code {
+  color: #dac36a !important;
+}
+
+.cm-s-obsidian span.cm-quote {
+  color: #a9c4d5;
+}
+
+.cm-s-obsidian span.cm-formatting-highlight,
+.cm-s-obsidian span.cm-highlight {
+  padding: 4px !important;
+  box-shadow: #ae068f 0 -2px 0 0 inset;
+  color: #ddd;
+  background-color: #058ec8;
+}
+
+.highlightr-rounded mark,
+.highlightr-rounded {
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 2px;
+}
+
+.markdown-preview-view mark {
+  padding: 4px !important;
+  box-shadow: #ae068f 0 -2px 0 0 inset;
+  color: #000;
+  background-color: #74d3fb;
+}
+
+th {
+  text-align: center !important;
+}
+
+tr th:nth-child(odd) {
+  background-color: dodgerblue !important;
+  font-family: Comic Sans MS;
+  border-radius: 5px;
+  box-shadow: none;
+  padding: 10px !important;
+}
+
+tr th:nth-child(even) {
+  background-color: darkviolet !important;
+  font-family: Comic Sans MS;
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+.markdown-rendered-mark {
+  color: #fff;
+  background-color: #ffb15000;
+}
+
+.markdown-source-view.mod-cm6 th,
+.markdown-preview-view th {
+  color: #f1f1f1;
+}
+
+.markdown-rendered code {
+  color: #f3a002;
+  font-family: consolas;
+  font-size: 0.95em;
+}
+
+.cm-formatting-list {
+  color: #fff !important;
+}
+
+span.cm-highlight.cm-list-3.cm-strong {
+  color: #d4d4d4;
+}
+
+th em {
+  color: #f4f4f4 !important;
+}
+
+th strong {
+  color: #f4f4f4 !important;
+}
+
+/*----------------------------------------------------------------
+Escape Character Color */
+
+.cm-s-obsidian span.cm-hmd-escape-char {
+  color: #7da6dd;
+}
+
+/*----------------------------------------------------------------
+syntax highlight
+----------------------------------------------------------------*/
+.theme-dark .cm-s-obsidian span.cm-comment {
+  color: #79c44c;
+}
+
+.theme-dark .token.comment,
+.theme-dark .token.prolog,
+.theme-dark .token.doctype,
+.theme-dark .token.cdata,
+.theme-dark .cm-comment,
+.theme-dark .cm-meta,
+.theme-dark .cm-qualifier {
+  color: #c29bed;
+}
+
+.theme-dark .cm-s-obsidian .HyperMD-codeblock {
+  color: #dddddd;
+}
+
+.theme-dark .token.boolean,
+.theme-dark .token.number,
+.theme-dark .cm-number {
+  color: #ff81c0;
+}
+
+.markdown-preview-view code {
+  font-family: "Source Code Pro" !important;
+}
+
+.theme-dark .cm-s-obsidian span.cm-inline-code,
+.theme-dark .markdown-preview-view code {
+  font-weight: 400 !important;
+}
+
+.token.string,
+.cm-hmd-frontmatter.cm-string {
+  color: #a6e22e !important;
+}
+
+.markdown-preview-view pre code {
+  color: #ffca00 !important;
+}
+
+.theme-dark .token.atrule,
+.theme-dark .token.attr-value,
+.theme-dark .token.function,
+.theme-dark .token.class-name,
+.theme-dark .cm-type,
+.theme-dark .cm-def {
+  color: #d19a66;
+}
+
+.theme-dark .token.keyword {
+  color: #66d9ef;
+}
+
+.cm-property {
+  color: #ff81c0;
+}
+
+.cm-tag {
+  color: #62b5d9 !important;
+}
+
+.cm-qualifier {
+  color: gold !important;
+}
+
+.cm-builtin {
+  color: gold !important;
+}
+
+.cm-attribute {
+  color: #f285f8 !important;
+}
+
+.cm-s-obsidian
+  span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight) {
+  color: #dcd809 !important;
+  font-weight: 600 !important;
+}
+
+.cm-string {
+  color: #eddd00 !important;
+}
+
+.theme-dark .token.boolean,
+.theme-dark .token.number,
+.theme-dark .cm-number {
+  color: #82ffd8;
+}
+
+/*----------------------------------------------------------------
+Ordered list number color
+----------------------------------------------------------------*/
+
+span.cm-formatting.cm-formatting-list.cm-formatting-list-ol.cm-list-1 {
+  color: white;
+}
+
+span.cm-list-2 {
+  text-indent: -10px;
+}
+
+ol > li::marker {
+  color: #fff;
+}
+
+/*----------------------------------------------------------------
+POPOVERS
+----------------------------------------------------------------*/
+
+/* Bigger popovers */
+div.popover.hover-popover {
+  width: 60rem;
+  max-height: 45rem !important;
+}
+
+div.popover.hover-popover .markdown-preview-view {
+  font-size: 18px !important;
+}
+
+.popover.hover-popover .markdown-embed {
+  height: 45rem !important;
+}
+
+/*----------------------------------------------------------------
+IMAGES RELATED ADD-ONS
+----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------
+Floating images with captions by @radekkozak */
+
+.markdown-preview-view.img-captions:not(.img-grid)
+  .image-embed:not([src$="left"]):not([src$="right"])::after {
+  font-size: 1.1525rem;
+}
+
+.markdown-preview-view:not(.img-grid).img-captions
+  .image-embed[src$="left"]::after {
+  font-size: 1.1525rem;
+}
+
+.markdown-preview-view:not(.img-grid).img-captions
+  .image-embed[src$="right"]::after {
+  font-size: 1.1525rem;
+}
+
+/*----------------------------------------------------------------
+Wrap the Table in editor mode by placing a pipe at the end of last column heading, below code not needed
+----------------------------------------------------------------*/
+
+.HyperMD-table-row.cm-line {
+  word-wrap: break-word !important;
+  word-break: break-word !important;
+  white-space: break-spaces !important;
+}
+
+/*----------------------------------------------------------------
+Horizontal rule in Live Preview
+----------------------------------------------------------------*/
+
+.is-live-preview .cm-line hr {
+  border-color: #a6a0a0;
+  border-width: 2px;
+}
+
+/*----------------------------------------------------------------
+Nicer Checkboxes
+----------------------------------------------------------------*/
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  border: 1px solid var(--text-faint);
+  padding: 0;
+}
+input[type="checkbox"]:focus {
+  outline: 0;
+}
+input[type="checkbox"]:checked {
+  background-color: var(--text-accent-hover);
+  border: 1px solid var(--text-accent-hover);
+  background-position: center;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-image: url('data:image/svg+xml; utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-4.000000, -6.000000)" fill="%23ffffff"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+}
+.markdown-preview-view .task-list-item-checkbox {
+  margin-left: -25px;
+}
+.markdown-preview-view .task-list-item {
+  padding-inline-start: 25px;
+}
+
+/* ----------------------------------------------------------------
+Excalidraw size
+----------------------------------------------------------------*/
+
+.markdown-preview-view > .workspace-leaf {
+  margin-top: 0 !important;
+}
